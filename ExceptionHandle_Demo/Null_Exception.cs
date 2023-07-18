@@ -10,15 +10,30 @@ namespace ExceptionHandle_Demo
     {
         public void Display()
         {
-            try
+            //List<Exception> exceptions = new List<Exception>();
+            //foreach (var item in exceptions)
+            //{
+            //    Console.WriteLine(item);
+                
+            //}
+            //try
+            //{
+            //    string str = null;
+            //   Console.WriteLine( str.Substring(2));
+
+            //}
+            //catch (NullReferenceException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            string str = null;
+            if(str != null) 
             {
-                string str = null;
-                //string hr = str.Substring(2);
-                //Console.WriteLine(hr);
+                Console.WriteLine(str.Substring(5));
             }
-            catch (NullReferenceException ex)
+            else
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("string is null");
             }
 
         }
