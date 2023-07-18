@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace ExceptionHandle_Demo
 {
-    public class IndexOut_Of_Range_Exception
+    public class Null_Exception
     {
-        public void Range()
+        public void Display()
         {
             try
             {
-                List<Exception> exceptions = new List<Exception>();
-                Console.WriteLine(exceptions[2]);
+                string str = null;
+                //string hr = str.Substring(2);
+                //Console.WriteLine(hr);
             }
-            catch (ArgumentOutOfRangeException ex)
+            catch (NullReferenceException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-           
-            
+
         }
     }
 }
